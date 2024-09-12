@@ -5,11 +5,13 @@ def main():
     primeFound = False
     
     while(not primeFound):
+        primeFound = True
         for n in range(2, pnumber):
             if pnumber % n == 0: # checks if input value is divisable by n, not prime
                 pnumber += 1
+                primeFound = False
                 break
-        primeFound = True
+        
     
     print(pnumber)
     return pnumber
