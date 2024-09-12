@@ -6,7 +6,7 @@ def main():
     
     while(not primeFound):
         for n in range(2, pnumber):
-            if number % n == 0: # checks if input value is divisable by n, not prime
+            if pnumber % n == 0: # checks if input value is divisable by n, not prime
                 pnumber += 1
                 break
         primeFound = True
